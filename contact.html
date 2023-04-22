@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-Page</title>
+    <!-- fav-icon -->
+    <link
+      rel="shortcut icon"
+      href="./imgs/icons8-rain-cloud-96.png"
+      type="image/x-icon"
+    />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- main styling -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="./imgs/logo@2x.png" alt="cloud logo" />
+          <div class="caption text-white ms-3">
+            <h5 class="mb-1 h6 fw-bold">Company name</h5>
+            <small>tagline goes here</small>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 text-white gap-2 align-items-center"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link text-reset"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-reset" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-reset" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-reset" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-reset" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="search-contact position-relative">
+              <input
+                type="text"
+                name="search"
+                class="w-100 rounded-5"
+                disabled
+              />
+              <div class="home-link text-white position-absolute">
+                <a href="index.html"
+                  >Home <i class="fa-solid fa-arrow-right-long mx-2"></i
+                ></a>
+                Contact
+              </div>
+            </div>
+          </div>
+          <div class="contact row px-4">
+            <div class="col-lg-5">
+              <div class="frame rounded-3">
+                <div class="mapouter">
+                  <div class="gmap_canvas h-100">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      id="gmap_canvas"
+                      src="https://maps.google.com/maps?q=Avenue Street, Los Angeles&t=k&z=8&ie=UTF8&iwloc=&output=embed"
+                      frameborder="0"
+                      scrolling="no"
+                      marginheight="0"
+                      marginwidth="0"
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="info px-3 pt-5 pb-4">
+                  <div class="address hstack align-items-center gap-3 mb-3">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                      <p class="mb-0">Company Name INC.</p>
+                      <p class="mb-0">2803 Avenue Street, Los Angeles</p>
+                    </div>
+                  </div>
+                  <div class="phone">
+                    <i class="fa-solid fa-phone-volume me-2"></i>
+                    <a
+                      href="tel:+1 800 314 235"
+                      class="text-reset text-decoration-none"
+                      >+1 800 314 235</a
+                    >
+                    <i class="fa-solid fa-envelope ms-4 me-2"></i>
+                    <a
+                      href="mailto:contact@companyname.com"
+                      class="text-reset text-decoration-none"
+                      >contact@companyname.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1 mt-lg-0 mt-5">
+              <div class="contactUs">
+                <h2 class="h1 text-white">Contact us</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Commodi consectetur inventore ducimus, facilis, numquam id
+                  soluta omnis eius recusandae nesciunt vero repellat harum cum.
+                  Nisi facilis odit hic, ipsum sed!
+                </p>
+                <form action="" class="row g-2">
+                  <div class="col-lg-6">
+                    <div class="h-100">
+                      <input
+                        type="text"
+                        name="y-name"
+                        placeholder="Your name..."
+                        class="w-100 h-100"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="h-100">
+                      <input
+                        type="email"
+                        name="y-email"
+                        placeholder="Email Address..."
+                        class="w-100 h-100"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="h-100">
+                      <input
+                        type="text"
+                        name="company-name"
+                        placeholder="Company name..."
+                        class="w-100 h-100"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="h-100">
+                      <input
+                        type="text"
+                        name="website"
+                        placeholder="website..."
+                        class="w-100 h-100"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div>
+                      <textarea
+                        name="message"
+                        id=""
+                        rows="5"
+                        class="w-100"
+                        placeholder="Message"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="submit d-flex mt-0">
+                    <input type="submit" value="Submit" class="btn text-white ms-auto">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="search position-relative">
+              <input
+                type="text"
+                name="search"
+                placeholder="Enter your email to subscribe..."
+                class="w-100 p-3 rounded-5"
+              />
+              <div class="find btn text-white position-absolute">Subscribe</div>
+            </div>
+          </div>
+          <div class="col-md-4 offset-1">
+            <div class="social">
+              <ul class="list-unstyled hstack gap-2 mt-3">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p>
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- home script -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

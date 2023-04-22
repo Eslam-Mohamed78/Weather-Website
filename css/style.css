@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+:root {
+  --darkBlue: #009ad8;
+  --background: #1e202b;
+  --secondBack: #272936;
+  --textColor: #bfc1c8;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (min-width: 1199px) {
+  .container {
+    padding: 0 85px;
+  }
+}
+
+/* ========== navbar ========== */
+nav {
+  padding: 45px 0 !important;
+}
+.navbar .navbar-brand img {
+  width: 64px;
+  height: 38px;
+}
+nav .caption small {
+  font-size: 0.5em !important;
+  display: block;
+  color: var(--textColor) !important;
+}
+.navbar-nav .nav-link {
+  border: 2px solid transparent;
+  border-radius: 50px;
+  padding: 1px 20px !important;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--darkBlue) !important;
+  border-color: var(--darkBlue);
+}
+
+nav .navbar-toggler {
+  border: 2px solid transparent;
+  padding: 15px 25px;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+}
+nav .navbar-toggler:focus {
+  box-shadow: none;
+}
+nav .navbar-toggler:hover {
+  border: 2px solid var(--darkBlue);
+  padding: 15px 25px;
+  border-radius: 40px;
+}
+nav .navbar-toggler i {
+  color: white;
+  transition: color 0.3s ease;
+}
+nav .navbar-toggler:hover i {
+  color: var(--darkBlue);
+}
+
+@media screen and (max-width: 991px) {
+  nav .nav-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondBack);
+    padding: 17px 0;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+  }
+  nav .navbar-nav {
+    margin-top: 20px;
+    border-radius: 10px;
+    gap: 0 !important;
+    overflow: hidden;
+  }
+}
+
+/* ========== home ========== */
+
+#home {
+  background-image: url(./../imgs/banner.png);
+  min-height: 80vh;
+  background-repeat: no-repeat;
+}
+
+#contact .home-link a:hover {
+  color: var(--darkBlue);
+}
+
+.search input {
+  border: none !important;
+  outline: none;
+  background-color: var(--background);
+  color: white;
+}
+
+.search .find {
+  top: 5px;
+  right: 6px;
+  transform: translateY(1%);
+  padding: 8px 42px;
+  border-radius: 40px;
+  font-size: 18px;
+  background-color: var(--darkBlue);
+}
+
+#home .weather {
+  transform: translateY(70px);
+  padding-bottom: 105px;
+}
+
+#home .weather-table {
+  margin-top: 80px;
+}
+#home .today,
+#home .after-tom {
+  background-color: #323544;
+}
+#home .tomorrow {
+  background-color: var(--secondBack);
+}
+#home .today,
+#home .tomorrow,
+#home .after-tom {
+  color: var(--textColor);
+}
+
+#home .head {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#home .today .temp {
+  font-size: 90px;
+  font-weight: 600;
+  color: white;
+  /* display: flex; */
+}
+
+#home .status {
+  color: var(--darkBlue);
+}
+#home .weather-table .great {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* ========== footer ========== */
+
+footer {
+  background-color: var(--secondBack);
+}
+footer p {
+  color: var(--textColor);
+  margin-top: 30px;
+  font-size: 14px;
+}
+footer ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--background);
+  transition: background-color 0.3s ease;
+}
+footer ul li a {
+  color: var(--darkBlue);
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+footer ul li:hover {
+  background-color: var(--darkBlue);
+  cursor: pointer;
+}
+footer ul li:hover a {
+  color: white;
+}
+
+/* ========== Contact ========== */
+
+#contact .search-contact input {
+  background-color: var(--secondBack);
+  border: none !important;
+  outline: none;
+  padding: 18px 0px;
+}
+
+#contact .home-link {
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  padding: 8px 20px;
+  border-radius: 40px;
+  font-size: 14px;
+}
+
+#contact .home-link a {
+  color: var(--textColor);
+  text-decoration: none;
+}
+#contact .home-link a i {
+  font-size: 10px;
+}
+
+#contact .contact {
+  padding: 70px 0;
+}
+
+#contact .frame {
+  background-color: var(--secondBack);
+  overflow: hidden;
+}
+#contact .frame .mapouter {
+  height: 215px;
+}
+#contact .frame .info {
+  color: var(--textColor);
+  font-size: 14px;
+}
+#contact .frame .info i {
+  color: var(--darkBlue);
+  font-size: 17px;
+}
+#contact .frame .phone a:hover {
+  color: var(--darkBlue) !important;
+}
+#contact .contactUs p {
+  color: var(--textColor);
+  font-size: 14px;
+}
+
+#contact .contactUs input,
+#contact .contactUs textarea {
+  padding: 15px 15px;
+  background: transparent;
+  border: 2px solid #393c48;
+  transition: border 0.3s ease;
+  outline: none;
+}
+#contact .contactUs input:hover,
+#contact .contactUs textarea:hover {
+  border-color: var(--darkBlue);
+}
+#contact .contactUs input {
+  border-radius: 50px;
+}
+#contact .contactUs textarea {
+  border-radius: 30px;
+}
+#contact .contactUs .submit .btn {
+  background-color: var(--darkBlue);
+  padding: 6px 17px;
+}

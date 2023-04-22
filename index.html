@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-App</title>
+    <!-- fav-icon -->
+    <link rel="shortcut icon" href="./imgs/cloud.png" type="image/x-icon">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- main styling -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="./imgs/logo@2x.png" alt="cloud logo" />
+          <div class="caption text-white ms-3">
+            <h5 class="mb-1 h6 fw-bold">Weather</h5>
+            <small>tagline goes here</small>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 text-white gap-2 align-items-center"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active text-reset"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-reset" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-reset" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-reset" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-reset" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="container">
+        <div class="row weather justify-content-center">
+          <div class="col-md-12">
+            <div class="search position-relative">
+              <input
+                type="text"
+                name="search"
+                placeholder="Find your location..."
+                class="w-100 p-3 rounded-5"
+              />
+              <div class="find btn text-white position-absolute">Find</div>
+            </div>
+          </div>
+          <div class="row weather-table p-0 rounded-3 overflow-hidden">
+            <div class="col-lg-4 today p-0">
+              <div class="head d-flex p-2">
+                Friday <span class="ms-auto">17March</span>
+              </div>
+              <div class="content p-3">
+                <div class="city">tanta</div>
+                <div class="temp py-3">
+                  <span>14&#8451;</span>
+                  <img
+                    src=""
+                    alt="condition"
+                  />
+                </div>
+                <div class="status mb-3">Clear</div>
+                <div class="info hstack gap-4 mb-3">
+                  <div class="ump">
+                    <img src="./imgs/icon-umberella.png" alt="umberella" />
+                    20%
+                  </div>
+                  <div class="wind">
+                    <img src="./imgs/icon-wind.png" alt="wind" />
+                    18km/h
+                  </div>
+                  <div class="compass">
+                    <img src="./imgs/icon-compass.png" alt="compass" />
+                    East
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 tomorrow p-0 text-center">
+              <div class="head p-2">Saturday</div>
+              <div class="content py-5">
+                <div class="icon"><img src="" alt="condition" /></div>
+                <div class="py-3">
+                  <div class="great text-white">20.6&deg;C</div>
+                  <div class="small">9.3&deg;C</div>
+                </div>
+                <div class="status mb-3">good</div>
+              </div>
+            </div>
+            <div class="col-lg-4 after-tom p-0 text-center">
+              <div class="head p-2">Sunday</div>
+              <div class="content py-5">
+                <div class="icon"><img src="" alt="" /></div>
+                <div class="py-3">
+                  <div class="great text-white">21.6&deg;C</div>
+                  <div class="small">9&deg;C</div>
+                </div>
+                <div class="status mb-3">good</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="search position-relative">
+              <input
+                type="text"
+                name="search"
+                placeholder="Enter your email to subscribe..."
+                class="w-100 p-3 rounded-5"
+              />
+              <div class="find btn text-white position-absolute">Subscribe</div>
+            </div>
+          </div>
+          <div class="col-md-4 offset-1">
+            <div class="social">
+              <ul class="list-unstyled hstack gap-2 mt-3">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p>
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- home script -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
